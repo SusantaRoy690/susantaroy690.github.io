@@ -1,26 +1,55 @@
-/* Style for the top menu bar */
-.top-menu {
-    background-color: #333; /* Background color */
-    position: fixed; /* Fixed position at the top */
-    top: 0; /* Stick to the top of the viewport */
-    width: 100%; /* Full width */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style for the menu items */
-.top-menu ul {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu {
     list-style: none;
     padding: 0;
-    margin: 0;
-    text-align: center; /* Center-align the menu items */
+    display: flex;
 }
 
-.top-menu li {
-    display: inline;
-    margin: 0 20px; /* Adjust the spacing between menu items */
+.nav-menu li {
+    margin-right: 20px;
 }
 
-.top-menu a {
+.nav-menu li a {
     text-decoration: none;
-    color: white; /* Text color */
+    color: #fff;
     font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav-menu li a:hover {
+    color: #f60; /* Change color on hover */
+}
+
+.container {
+    padding-top: 60px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
 }
