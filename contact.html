@@ -3,51 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- We'll create this CSS file in step 5. -->
-    <title>Your Name - Interactive GitHub Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Susanta Roy - Interactive GitHub Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            color: #fff;
+            width: 200px;
+            height: 100%;
+            padding: 20px 0;
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            margin-left: 220px; /* Adjust this value based on the menu width */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="workshop-and-conference.html">Workshop and Conference</a></li>
-                <li><a href="presentations.html">Presentations</a></li>
-                <li><a href="fdp.html">Faculty Development Programs (FDP)</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="tools.html">Tools and Databases</a></li>
-                <li><a href="courses.html">Courses Created</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="industry.html">Industrial Experience</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="experience.html">Experience & References Letters</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Add your content sections here -->
-    <section id="about"> <!-- About Me section -->
-        <h2>About Me</h2>
-        <!-- Your about me content goes here -->
-    </section>
-
-    <section id="cv"> <!-- CV section -->
-        <h2>CV</h2>
-        <!-- Your CV content goes here -->
-    </section>
-
-    <!-- Repeat this structure for all other sections -->
-
-    <section id="contact"> <!-- Contact section -->
-        <h2>Contact</h2>
-        <!-- Your contact information goes here -->
-    </section>
-
-    <!-- You can also include a footer here -->
+    <div class="menu">
+        <a href="index.html">About Me</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="books.html">Books</a>
+        <a href="workshop-and-conference.html">Workshop and Conference</a>
+        <a href="presentations.html">Presentations</a>
+        <a href="fdp.html">Faculty Development Programs (FDP)</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="tools.html">Tools and Databases</a>
+        <a href="courses.html">Courses Created</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="industry.html">Industrial Experience</a>
+        <a href="blog.html">Blog</a>
+        <a href="experience.html">Experience & References Letters</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="content">
+        <h1>Welcome to My GitHub Website</h1>
+    </div>
 </body>
 </html>
