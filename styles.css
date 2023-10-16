@@ -1,0 +1,26 @@
+/* Add your desired styles for the navigation menu */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Change to your preferred background color */
+    z-index: 1000; /* Make it appear above other content */
+}
+
+/* Add styles for the navigation links (optional) */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Adjust alignment as needed */
+}
+
+#navbar li {
+    display: inline;
+    margin: 10px;
+}
+
+#navbar a {
+    color: white; /* Change link color as desired */
+    text-decoration: none;
+}
