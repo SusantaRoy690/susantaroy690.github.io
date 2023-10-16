@@ -3,12 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- We'll create this CSS file in step 5. -->
-    <title>Your Name - Interactive GitHub Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Susanta Roy - Interactive GitHub Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ff9800; /* Orange color */
+            font-weight: bold;
+            font-size: 14px; /* Smaller font size */
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #555;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff5722; /* Different color on hover */
+        }
+
+        .content {
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Susanta Roy</h1>
         <nav>
             <ul>
                 <li><a href="index.html">About Me</a></li>
@@ -29,25 +89,9 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Add your content sections here -->
-    <section id="about"> <!-- About Me section -->
-        <h2>About Me</h2>
-        <!-- Your about me content goes here -->
-    </section>
-
-    <section id="cv"> <!-- CV section -->
-        <h2>CV</h2>
-        <!-- Your CV content goes here -->
-    </section>
-
-    <!-- Repeat this structure for all other sections -->
-
-    <section id="contact"> <!-- Contact section -->
-        <h2>Contact</h2>
-        <!-- Your contact information goes here -->
-    </section>
-
-    <!-- You can also include a footer here -->
+    <div class="content">
+        <h1>Welcome to My GitHub Website</h1>
+        <!-- Your content goes here -->
+    </div>
 </body>
 </html>
