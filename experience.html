@@ -31,6 +31,7 @@
         nav ul {
             list-style: none;
             padding: 0;
+            text-align: center; /* Center the menu items */
         }
 
         nav ul li {
@@ -42,6 +43,15 @@
             text-decoration: none;
             color: #fff;
             font-weight: bold;
+            font-size: 18px; /* Increase the font size */
+            padding: 10px 20px; /* Add padding to make the menu items larger */
+            border-radius: 5px; /* Add rounded corners */
+            background-color: #555; /* Background color for normal state */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+
+        nav ul li a:hover {
+            background-color: #777; /* Background color on hover */
         }
 
         .content {
