@@ -37,6 +37,15 @@
             background-color: #555;
         }
 
+        .menu .menu-item {
+            padding: 10px 20px;
+            transition: background-color 0.2s; /* Add smooth background color transition */
+        }
+
+        .menu .menu-item:hover {
+            background-color: #555;
+        }
+
         .content {
             margin-left: 0;
             padding: 20px;
@@ -45,8 +54,8 @@
 
         .hamburger {
             position: fixed;
-            top: 20px; /* Move the hamburger button up */
-            left: 20px; /* Move the hamburger button to the left */
+            top: 10px;
+            left: 10px; /* Move the hamburger button to the left */
             background-color: #333;
             color: #fff;
             width: 30px;
@@ -65,21 +74,21 @@
 </head>
 <body>
     <div class="menu" id="menu">
-        <a href="index.html">About Me</a>
-        <a href="cv.html">CV</a>
-        <a href="publications.html">Publications</a>
-        <a href="books.html">Books</a>
-        <a href="workshop-and-conference.html">Workshop and Conference</a>
-        <a href="presentations.html">Presentations</a>
-        <a href="fdp.html">Faculty Development Programs (FDP)</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="tools.html">Tools and Databases</a>
-        <a href="courses.html">Courses Created</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="industry.html">Industrial Experience</a>
-        <a href="blog.html">Blog</a>
-        <a href="experience.html">Experience & References Letters</a>
-        <a href="contact.html">Contact</a>
+        <div class="menu-item"><a href="index.html">About Me</a></div>
+        <div class="menu-item"><a href="cv.html">CV</a></div>
+        <div class="menu-item"><a href="publications.html">Publications</a></div>
+        <div class="menu-item"><a href="books.html">Books</a></div>
+        <div class="menu-item"><a href="workshop-and-conference.html">Workshop and Conference</a></div>
+        <div class="menu-item"><a href="presentations.html">Presentations</a></div>
+        <div class="menu-item"><a href="fdp.html">Faculty Development Programs (FDP)</a></div>
+        <div class="menu-item"><a href="certifications.html">Certifications</a></div>
+        <div class="menu-item"><a href="tools.html">Tools and Databases</a></div>
+        <div class="menu-item"><a href="courses.html">Courses Created</a></div>
+        <div class "menu-item"><a href="teaching.html">Teaching</a></div>
+        <div class="menu-item"><a href="industry.html">Industrial Experience</a></div>
+        <div class="menu-item"><a href="blog.html">Blog</a></div>
+        <div class="menu-item"><a href="experience.html">Experience & References Letters</a></div>
+        <div class="menu-item"><a href="contact.html">Contact</a></div>
     </div>
     <div class="content">
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#8801;</div>
