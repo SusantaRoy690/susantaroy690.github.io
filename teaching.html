@@ -16,13 +16,13 @@
         .menu {
             position: fixed;
             top: 0;
-            left: -270px;
+            left: -270px; /* Start with the menu hidden on the left */
             background-color: #333;
             color: #fff;
             width: 270px;
             height: 100%;
             padding: 20px 0;
-            transition: left 0.3s;
+            transition: left 0.3s; /* Add smooth transition */
         }
 
         .menu a {
@@ -40,13 +40,13 @@
         .content {
             margin-left: 0;
             padding: 20px;
-            transition: margin-left 0.3s;
+            transition: margin-left 0.3s; /* Add smooth transition */
         }
 
         .hamburger {
             position: fixed;
-            top: 10px;
-            right: 10px;
+            top: 20px; /* Move the hamburger button up */
+            left: 20px; /* Move the hamburger button to the left */
             background-color: #333;
             color: #fff;
             width: 30px;
@@ -55,6 +55,7 @@
             line-height: 30px;
             font-size: 20px;
             cursor: pointer;
+            z-index: 1; /* Ensure it's above the content */
         }
 
         h1 {
@@ -63,7 +64,7 @@
     </style>
 </head>
 <body>
-    <div class="menu">
+    <div class="menu" id="menu">
         <a href="index.html">About Me</a>
         <a href="cv.html">CV</a>
         <a href="publications.html">Publications</a>
@@ -87,17 +88,15 @@
 
     <script>
         function toggleMenu() {
-            var menu = document.querySelector('.menu');
+            var menu = document.getElementById('menu');
             var content = document.querySelector('.content');
             var button = document.querySelector('.hamburger');
             if (menu.style.left === '-270px') {
                 menu.style.left = '0';
                 content.style.marginLeft = '270px';
-                button.style.right = '-270px';
             } else {
                 menu.style.left = '-270px';
                 content.style.marginLeft = '0';
-                button.style.right = '10px';
             }
         }
     </script>
