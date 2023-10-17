@@ -16,13 +16,13 @@
         .menu {
             position: fixed;
             top: 0;
-            right: -270px;
+            right: -270px; /* Start with the menu hidden */
             background-color: #333;
             color: #fff;
             width: 270px;
             height: 100%;
             padding: 20px 0;
-            transition: right 0.3s;
+            transition: right 0.3s; /* Add smooth transition */
         }
 
         .menu a {
@@ -40,7 +40,7 @@
         .content {
             margin-right: 0;
             padding: 20px;
-            transition: margin-right 0.3s;
+            transition: margin-right 0.3s; /* Add smooth transition */
         }
 
         .hamburger {
@@ -55,7 +55,7 @@
             line-height: 30px;
             font-size: 20px;
             cursor: pointer;
-            z-index: 2; /* Ensure it's above the menu */
+            z-index: 1; /* Ensure it's above the content */
         }
 
         h1 {
@@ -66,7 +66,20 @@
 <body>
     <div class="menu" id="menu">
         <a href="index.html">About Me</a>
-        <!-- Add more menu items here -->
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="books.html">Books</a>
+        <a href="workshop-and-conference.html">Workshop and Conference</a>
+        <a href="presentations.html">Presentations</a>
+        <a href="fdp.html">Faculty Development Programs (FDP)</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="tools.html">Tools and Databases</a>
+        <a href="courses.html">Courses Created</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="industry.html">Industrial Experience</a>
+        <a href="blog.html">Blog</a>
+        <a href="experience.html">Experience & References Letters</a>
+        <a href="contact.html">Contact</a>
     </div>
     <div class="content">
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#8801;</div>
@@ -81,11 +94,9 @@
             if (menu.style.right === '-270px') {
                 menu.style.right = '0';
                 content.style.marginRight = '270px';
-                button.style.right = '-270px';
             } else {
                 menu.style.right = '-270px';
                 content.style.marginRight = '0';
-                button.style.right = '10px';
             }
         }
     </script>
