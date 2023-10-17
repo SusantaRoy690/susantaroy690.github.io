@@ -16,13 +16,12 @@
         .menu {
             position: fixed;
             top: 0;
-            right: -270px; /* Start with the menu hidden */
             background-color: #333;
             color: #fff;
             width: 270px;
             height: 100%;
             padding: 20px 0;
-            transition: right 0.3s; /* Add smooth transition */
+            transition: 0.3s; /* Add smooth transition */
         }
 
         .menu a {
@@ -38,15 +37,13 @@
         }
 
         .content {
-            margin-right: 0;
             padding: 20px;
-            transition: margin-right 0.3s; /* Add smooth transition */
+            transition: margin-left 0.3s; /* Add smooth transition */
         }
 
         .hamburger {
             position: fixed;
             top: 10px;
-            right: 10px;
             background-color: #333;
             color: #fff;
             width: 30px;
@@ -62,10 +59,23 @@
             text-align: center;
         }
 
+        /* Media query for screens smaller than 768px (e.g., mobile devices) */
         @media (max-width: 768px) {
             .menu {
-                top: 0;
-                right: 0; /* Display menu on the right for screens <= 768px */
+                right: -270px;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+
+        /* Media query for screens larger than 768px (e.g., PCs or laptops) */
+        @media (min-width: 769px) {
+            .menu {
+                left: -270px;
+            }
+            .content {
+                margin-left: 0;
             }
         }
     </style>
@@ -98,12 +108,22 @@
             var menu = document.getElementById('menu');
             var content = document.querySelector('.content');
             var button = document.querySelector('.hamburger');
-            if (menu.style.right === '-270px') {
-                menu.style.right = '0';
-                content.style.marginRight = '270px';
+            if (window.innerWidth <= 768) {
+                if (menu.style.right === '-270px') {
+                    menu.style.right = '0';
+                    content.style.marginLeft = '270px';
+                } else {
+                    menu.style.right = '-270px';
+                    content.style.marginLeft = '0';
+                }
             } else {
-                menu.style.right = '-270px';
-                content.style.marginRight = '0';
+                if (menu.style.left === '-270px') {
+                    menu.style.left = '0';
+                    content.style.marginLeft = '270px';
+                } else {
+                    menu.style.left = '-270px';
+                    content.style.marginLeft = '0';
+                }
             }
         }
     </script>
