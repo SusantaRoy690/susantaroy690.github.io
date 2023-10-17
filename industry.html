@@ -19,7 +19,7 @@
             left: -220px; /* Start with the menu hidden */
             background-color: #333;
             color: #fff;
-            width: 200px;
+            width: 220px; /* Increased the width */
             height: 100%;
             padding: 20px 0;
             transition: left 0.3s; /* Add smooth transition */
@@ -89,8 +89,8 @@
             var button = document.querySelector('.menu-button');
             if (menu.style.left === '-220px') {
                 menu.style.left = '0';
-                content.style.marginLeft = '200px';
-                button.style.left = '200px';
+                content.style.marginLeft = '220px'; /* Adjusted to 220px */
+                button.style.left = '220px'; /* Adjusted to 220px */
             } else {
                 menu.style.left = '-220px';
                 content.style.marginLeft = '0';
